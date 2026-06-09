@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Space+Mono&display=swap');
+
+:root {
+  --bg:         #0d0d1a;  
+  --bg-2:       #12102b;  
+  --neon-pink:  #ff2d78; 
+  --neon-cyan:  #00f5d4; 
+  --sunset-org: #ff6b35;  
+  --sunset-pur: #c44dff;  
+  --text:       #f0e6ff;  
+  --text-dim:   #7b6f9e;  
+  --glass:      rgba(255, 255, 255, 0.04);
+  --font-display: 'Playfair Display', serif;  
+  --font-mono:    'Space Mono', monospace;    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-style: italic;
+}
