@@ -8,18 +8,19 @@ router.get("/", (req, res)=>{
 });
 
 router.post("/", (req, res)=>{
-    const { name, object, fragment } = req.body;
-    if(!name || !object || !fragment){
+    const { name, object, fragment, vibe } = req.body;
+    if(!name || !object || !fragment || !vibe){
         return res.status(400).json({
             error: "All fields required"
         })
     }
     const result = db.prepare(
-        "INSERT INTO buildings (name, object, fragment) VALUES (?, ?, ?)"
-    ).run(name, object, fragment);
+        "INSERT INTO buildings (name, vibe, object, fragment) VALUES (?, ?, ?, ?)"
+    ).run(name, vibe, object, fragment);
     res.json({
         id: result.lastInsertRowid,
         name,
+        vibe,
         object,
         fragment
     })
