@@ -1,12 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invisible City</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="petals">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+    </div>
+    <div class="clouds">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+    </div>
+    <div class="landing">
+      <div class="doodle"></div>
+      <h1 class="title">A city that shouldn't exist</h1>
+      <p class="tagline">Impossible things and lost fragments</p>
+      <button class="enter-btn" onclick="enterCity()">✦ Enter ✦</button>
+    </div>
+    <div class="loader" id="loader">
+      <p class="loader-text" id="loader-text">finding the invisible city...</p>
+    </div>
+    <div class="app" id="app">
+      <nav class="nav">
+        <span class="nav-logo">invisible city</span>
+        <div class="nav-tabs">
+          <button class="tab active" onclick="switchTab(event, 'city')">
+            City
+          </button>
+          <button class="tab" onclick="switchTab(event, 'cabinet')">
+            Cabinet
+          </button>
+          <button class="tab" onclick="switchTab(event, 'radio')">
+            Radio
+          </button>
+        </div>
+      </nav>
+
+      <main class="main">
+        <section class="tab-section active" id="city">
+          <div class="skyline" id="skyline"></div>
+          <div class="city-form">
+            <h2>add your building</h2>
+            <input type="text" id="city-name" placeholder="building name" />
+            <input
+              type="text"
+              id="city-vibe"
+              placeholder="vibe (dreamy, eerie, loud...)"
+            />
+            <input
+              type="text"
+              id="city-object"
+              placeholder="impossible object"
+            />
+            <textarea
+              id="city-fragment"
+              placeholder="your fragment — a whisper, a sentence..."
+            ></textarea>
+            <button type="button" onclick="submitBuilding()">place it ✦</button>
+          </div>
+        </section>
+
+        <section class="tab-section" id="cabinet">
+          <p>cabinet goes here</p>
+        </section>
+
+        <section class="tab-section" id="radio">
+          <p>radio goes here</p>
+        </section>
+      </main>
+      <div class="skyline" id="skyline">
+        <div id="skyline-tip"></div>
+      </div>
+    </div>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
