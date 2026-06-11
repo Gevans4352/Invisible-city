@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio</title>
+    <link rel="stylesheet" href="./Radio.css" />
+  </head>
+  <body>
+    <div class="radio-page">
+      <nav class="nav">
+        <a href="../App/app.html" class="nav-logo">Invisible City</a>
+        <div class="nav-tabs">
+          <a href="../App/app.html" class="tab">City</a>
+          <a href="../Cabinet/cabinet.html" class="tab">Cabinet</a>
+          <span class="tab active">Radio</span>
+        </div>
+      </nav>
+
+      <main class="main">
+        <div class="radio-visual" id="radio-visual">
+          <svg
+            width="100%"
+            viewBox="0 0 680 400"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Kawaii radio illustration</title>
+            <desc>
+              A cute pink kawaii radio with antenna, speaker, dials and
+              decorative stars
+            </desc>
+            <style>
+              @keyframes blink {
+                0%,
+                100% {
+                  opacity: 1;
+                }
+                50% {
+                  opacity: 0.2;
+                }
+              }
+              @keyframes wave {
+                0%,
+                100% {
+                  transform: scaleY(1);
+                }
+                50% {
+                  transform: scaleY(1.6);
+                }
+              }
+              .blink {
+                animation: blink 1.8s ease-in-out infinite;
+              }
+              .blink2 {
+                animation: blink 2.4s ease-in-out infinite 0.6s;
+              }
+              .blink3 {
+                animation: blink 1.4s ease-in-out infinite 1s;
+              }
+              .bar1 {
+                animation: wave 0.8s ease-in-out infinite;
+                transform-origin: center bottom;
+              }
+              .bar2 {
+                animation: wave 0.8s ease-in-out infinite 0.15s;
+                transform-origin: center bottom;
+              }
+              .bar3 {
+                animation: wave 0.8s ease-in-out infinite 0.3s;
+                transform-origin: center bottom;
+              }
+              .bar4 {
+                animation: wave 0.8s ease-in-out infinite 0.45s;
+                transform-origin: center bottom;
+              }
+              .bar5 {
+                animation: wave 0.8s ease-in-out infinite 0.6s;
+                transform-origin: center bottom;
+              }
+            </style>
+            <rect
+              x="190"
+              y="140"
+              width="300"
+              height="190"
+              rx="24"
+              fill="#ffb3d1"
+            />
+            <rect
+              x="200"
+              y="150"
+              width="280"
+              height="170"
+              rx="18"
+              fill="#ffd6e7"
+            />
+            <line
+              x1="300"
+              y1="140"
+              x2="270"
+              y2="60"
+              stroke="#ff85b3"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <circle cx="268" cy="56" r="8" fill="#ff2d78" />
+            <circle cx="268" cy="56" r="4" fill="#fff" class="blink" />
+            <rect
+              x="215"
+              y="168"
+              width="110"
+              height="90"
+              rx="12"
+              fill="#ffb3d1"
+            />
+            <rect
+              x="220"
+              y="173"
+              width="100"
+              height="80"
+              rx="10"
+              fill="#ff85b3"
+              opacity="0.4"
+            />
+            <rect
+              class="bar1"
+              x="234"
+              y="198"
+              width="8"
+              height="30"
+              rx="4"
+              fill="#ff2d78"
+              opacity="0.8"
+            />
+            <rect
+              class="bar2"
+              x="248"
+              y="190"
+              width="8"
+              height="38"
+              rx="4"
+              fill="#c44dff"
+              opacity="0.8"
+            />
+            <rect
+              class="bar3"
+              x="262"
+              y="183"
+              width="8"
+              height="45"
+              rx="4"
+              fill="#ff2d78"
+              opacity="0.9"
+            />
+            <rect
+              class="bar4"
+              x="276"
+              y="190"
+              width="8"
+              height="38"
+              rx="4"
+              fill="#c44dff"
+              opacity="0.8"
+            />
+            <rect
+              class="bar5"
+              x="290"
+              y="198"
+              width="8"
+              height="30"
+              rx="4"
+              fill="#ff2d78"
+              opacity="0.8"
+            />
+            <circle cx="390" cy="195" r="38" fill="#ffb3d1" />
+            <circle cx="390" cy="195" r="30" fill="#ffd6e7" />
+            <circle cx="390" cy="195" r="12" fill="#ff85b3" />
+            <circle cx="390" cy="195" r="6" fill="#ff2d78" />
+            <line
+              x1="390"
+              y1="183"
+              x2="390"
+              y2="173"
+              stroke="#fff"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            />
+            <circle cx="360" cy="265" r="16" fill="#ffb3d1" />
+            <circle cx="360" cy="265" r="10" fill="#ffd6e7" />
+            <circle cx="360" cy="265" r="5" fill="#ff85b3" />
+            <line
+              x1="360"
+              y1="258"
+              x2="360"
+              y2="253"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <circle cx="410" cy="265" r="16" fill="#ffb3d1" />
+            <circle cx="410" cy="265" r="10" fill="#ffd6e7" />
+            <circle cx="410" cy="265" r="5" fill="#c44dff" />
+            <line
+              x1="415"
+              y1="260"
+              x2="418"
+              y2="257"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <rect
+              x="215"
+              y="285"
+              width="110"
+              height="18"
+              rx="9"
+              fill="#ffb3d1"
+            />
+            <rect
+              x="217"
+              y="287"
+              width="70"
+              height="14"
+              rx="7"
+              fill="#ff85b3"
+            />
+            <circle class="blink" cx="348" cy="175" r="5" fill="#ff2d78" />
+            <circle class="blink2" cx="363" cy="175" r="5" fill="#c44dff" />
+            <circle class="blink3" cx="378" cy="175" r="5" fill="#ffb3d1" />
+            <text x="168" y="170" font-size="18" fill="#ff85b3" class="blink">
+              ✦
+            </text>
+            <text x="498" y="155" font-size="14" fill="#c44dff" class="blink2">
+              ✦
+            </text>
+            <text x="155" y="300" font-size="10" fill="#ffb3d1" class="blink3">
+              ✦
+            </text>
+            <text x="510" y="290" font-size="12" fill="#ff85b3" class="blink">
+              ✦
+            </text>
+            <path
+              d="M278 80 Q290 70 278 60"
+              stroke="#ff85b3"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              class="blink"
+              opacity="0.7"
+            />
+            <path
+              d="M284 88 Q302 72 284 56"
+              stroke="#c44dff"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              class="blink2"
+              opacity="0.6"
+            />
+            <path
+              d="M290 96 Q314 74 290 52"
+              stroke="#ff2d78"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+              class="blink3"
+              opacity="0.5"
+            />
+            <rect
+              x="220"
+              y="326"
+              width="30"
+              height="10"
+              rx="5"
+              fill="#ffb3d1"
+            />
+            <rect
+              x="430"
+              y="326"
+              width="30"
+              height="10"
+              rx="5"
+              fill="#ffb3d1"
+            />
+          </svg>
+        </div>
+
+        <p class="now-playing" id="now-playing">Tuning in...</p>
+
+        <div class="radio-form">
+          <h2>Leave a fragment</h2>
+          <textarea
+            id="radio-fragment"
+            placeholder="a whisper, a sentence, a word..."
+          ></textarea>
+          <button type="button" onclick="submitFragment()">✦ Transmit ✦</button>
+        </div>
+      </main>
+    </div>
+    <script src="./Radio.js"></script>
+  </body>
+</html>
