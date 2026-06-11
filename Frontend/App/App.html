@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CITY</title>
+    <link rel="stylesheet" href="App.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <nav class="nav">
+        <span class="nav-logo">invisible city</span>
+        <div class="nav-tabs">
+          <button class="tab active" onclick="switchTab(event, 'city')">
+            City
+          </button>
+          <a class="tab" href="../Cabinet/Cabinet.html">Cabinet</a>
+          <a class="tab" href="../Radio/Radio.html">Radio</a>
+        </div>
+      </nav>
+
+      <main class="main">
+        <section class="tab-section active" id="city">
+          <div class="skyline" id="skyline">
+            <div id="skyline-tip"></div>
+          </div>
+          <div class="city-form">
+            <h2>Add your building</h2>
+            <input type="text" id="city-name" placeholder="building name" />
+            <input
+              type="text"
+              id="city-vibe"
+              placeholder="vibe (dreamy, eerie, loud...)"
+            />
+            <input
+              type="text"
+              id="city-object"
+              placeholder="impossible object"
+            />
+            <textarea
+              id="city-fragment"
+              placeholder="your fragment, a whisper, a sentence..."
+            ></textarea>
+            <button type="button" onclick="submitBuilding()">place it ✦</button>
+          </div>
+        </section>
+
+        <section class="tab-section" id="cabinet">
+          <p>cabinet goes here</p>
+        </section>
+
+        <section class="tab-section" id="radio">
+          <p>radio goes here</p>
+        </section>
+      </main>
+    </div>
+    <script src="./App.js"></script>
+  </body>
+</html>
