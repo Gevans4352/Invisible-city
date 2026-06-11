@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet</title>
+    <link rel="stylesheet" href="../App/App.css">
+</head>
+<body>
+
+  <div class="cabinet-page">
+
+    <nav class="nav">
+      <a href="../App/app.html" class="nav-logo">invisible city</a>
+      <div class="nav-tabs">
+        <a href="../App/app.html" class="tab">City</a>
+        <span class="tab active">Cabinet</span>
+        <a href="../Radio/radio.html" class="tab">Radio</a>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="cabinet-grid" id="cabinet-grid">
+        <!-- cards render here -->
+      </div>
+
+      <div class="cabinet-form">
+        <h2>Invent an object</h2>
+        <input type="text" id="cab-name" placeholder="object name" />
+        <input type="text" id="cab-vibe" placeholder="vibe (eerie, soft, loud...)" />
+        <input type="text" id="cab-object" placeholder="impossible object" />
+        <textarea id="cab-fragment" placeholder="a whisper, a sentence..."></textarea>
+        <button type="button" onclick="submitObject()">Add to cabinet ✦</button>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="cabinet.js"></script>
+</body>
+</html>
